@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.documentContainer {
+  background: linear-gradient(160deg, #1a1a1a 0%, #1a1a1a 70%, #e62aff 130%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+h1 {
+  margin-top: 15vh;
+}
+
+.documentsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(2, 200px);
+  gap: 20px;
+  justify-content: center;
+  width: 90%;
+  height: 80%;
+  margin-top: 5vh;
+}
+
+/* === Each card — the clickable outer box, sets up the 3D "stage" === */
+.gridItem {
+  perspective: 1000px; /* how "deep" the 3D flip looks — lower = more dramatic */
+  cursor: pointer;
+}
+
+/* this is what actually rotates */
+.cardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d; /* lets front/back exist in 3D space, not flattened */
+}
+
+/* when parent has .flipped, rotate the inner card */
+.gridItem.flipped .cardInner {
+  transform: rotateY(180deg);
+}
+
+/* front and back share the exact same space, stacked on top of each other */
+.cardFront,
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* hides whichever face is turned away from us */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cardFront {
+  background: linear-gradient(135deg, #1a1a1a 0%, #e62aff 100%);
+  color: #fff;
+}
+
+.cardBack {
+  background: #e62aff;
+  color: #1a1a1a;
+  transform: rotateY(180deg); /* pre-flipped, so it's "right way up" once the card rotates */
+}
+
+/* === Front face content === */
+.gridIcon {
+  width: 70%;
+  margin-bottom: 12px;
+}
+
+.cardTitle {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* === Back face content === */
+.cardDesc {
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.downloadBtn {
+  background: #1a1a1a;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+}
