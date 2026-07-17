@@ -9,9 +9,9 @@ const Nav = () => {
             <div className="navGrid">
                 <Link to='/' className="navItem">Home</Link>
                 <Link to='/documents' className="navItem">My Documents</Link>
-                <div className="navItem">Projects</div>
-                <div className="navItem">Recent Work</div>  
-                <div className="navItem">Get In Touch</div>  
+                <Link to='/projects' className="navItem">Projects</Link>
+                <Link to='/recent-work' className="navItem">Recent Work</Link>  
+                <Link to='/get-in-touch' className="navItem">Get In Touch</Link>  
             </div>
         </div>
     </>

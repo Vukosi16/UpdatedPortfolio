@@ -20,7 +20,7 @@ h1 {
 .documentsGrid {
   display: grid;
   grid-template-columns: repeat(3, 250px);
-  grid-template-rows: repeat(2, 200px);
+  grid-template-rows: repeat(2, 230px);
   gap: 20px;
   justify-content: center;
   width: 90%;
@@ -89,7 +89,7 @@ h1 {
 
 /* === Back face content === */
 .cardDesc {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.5;
   margin-bottom: 16px;
 }
