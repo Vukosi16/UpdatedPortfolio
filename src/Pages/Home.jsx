@@ -2,6 +2,7 @@ import React from 'react'
 import Nav from '../Components/Nav.jsx'
 import {Link} from 'react-router'
 import '../Styles/App.css'
+import portrait from '../assets/portrait.jpeg'
 
 const Home = () => {
   return (
@@ -26,7 +27,7 @@ const Home = () => {
                         </Link>
                     </div>
                     <div className="rightHeroImage">
-                        <img className='portraitImg' src="..\src\assets\portrait.jpeg" alt="" />
+                        <img className='portraitImg' src={portrait} alt="" />
                     </div>
                 </div>
 
