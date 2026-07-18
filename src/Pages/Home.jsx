@@ -1,5 +1,6 @@
 import React from 'react'
 import Nav from '../Components/Nav.jsx'
+import {Link} from 'react-router'
 
 const Home = () => {
   return (
@@ -17,9 +18,11 @@ const Home = () => {
                         <p className="heroText">
                             Hello! I am Vukosi Mohlabini, a Full Stack Developer from Pretoria, South Africa. I have a passion for making cool stuff and solving problems. Look around and see what I have been working on. If you like what you see, feel free to reach out to me.
                         </p>
-                        <button className="ctaButton">
-                            Reach out to me &#x2192;
-                        </button>
+                        <Link to="/get-in-touch" className="ctaButtonLink">
+                            <button className="ctaButton">
+                                Reach out to me &#x2192;
+                            </button>
+                        </Link>
                     </div>
                     <div className="rightHeroImage">
                         <img className='portraitImg' src="..\src\assets\portrait.jpeg" alt="" />

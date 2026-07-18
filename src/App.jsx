@@ -6,6 +6,7 @@ import Layout from './Components/Layout'
 import Projects from './Pages/Projects'
 import RecentWork from './Pages/RecentWork'
 import { GetInTouch } from './Pages/GetInTouch'
+import NotFound from './Pages/NotFound'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='projects' element={<Projects/>} />
           <Route path='recent-work' element={<RecentWork/>} />
           <Route path='get-in-touch' element={<GetInTouch/>} />
+        <Route path='*' element={<NotFound/>} />
         </Route>
 
     </Routes>

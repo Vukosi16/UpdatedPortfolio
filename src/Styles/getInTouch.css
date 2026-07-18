@@ -42,6 +42,7 @@ body{
     font-family: 'Manrope', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
     font-weight: bold;
     padding: 0;
+    color: aliceblue;
 }
 
 .contactGrid{
@@ -55,16 +56,68 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
     background-color: rgb(167, 104, 104);
     border-radius: 50%;
     cursor: pointer;
     background-color: #fff;
 }
 
+.gridItem:hover{
+    background-color: #e62aff;
+}
+
 .icons{
     width: 100px;
+}
+
+.gitRightFormContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formEdits{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#nameTextBox{
+    width: 650px;
+    height: 45px;
+    border: 2px solid #e62aff;
+    border-radius: 5px;
+}
+
+#emailTextBox{
+    width: 650px;
+    height: 45px;
+    border: 2px solid #e62aff;
+    border-radius: 5px;
+}
+
+#companyOfIntrest{
+    width: 650px;
+    height: 45px;
+    border: 2px solid #e62aff;
+    border-radius: 5px;
+}
+
+#message{
+    width: 650px;
+    height: 100px;
+    border: 2px solid #e62aff;
+    border-radius: 5px;
+}
+
+.submitButton{
+    width: 200px;
+    height: 50px;
+    margin-left: 15vw;
 }
 
 .copyToast {
@@ -78,5 +131,20 @@ body{
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     font-weight: 600;
     z-index: 1000;
+}
+
+.submitButton{
+    background-color: #e62aff;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+.submitButton:hover{
+    background-color: #fff;
+    color: #e62aff;
+    border: 3px solid #e62aff;
 }
 
