@@ -131,6 +131,7 @@ h1 {
 @media (max-width: 600px) {
   .documentContainer {
     padding: 1.5rem 0;
+    margin-top: 10vh;
   }
 
   h1 {
@@ -143,6 +144,9 @@ h1 {
     grid-template-columns: 1fr;
     width: min(100%, 320px);
     margin-top: 3vh;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
   }
 
   .gridItem {

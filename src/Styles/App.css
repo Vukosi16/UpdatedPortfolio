@@ -323,7 +323,7 @@ body{
  
   .heroHeading{
     font-size: 1.8rem;        /* was 2.5rem at tablet — too big for a phone screen */
-    margin-top: 60px;        /* clears the nav; one number since layout is stacked, not side-by-side */
+    margin-top: 150px;        /* clears the nav; one number since layout is stacked, not side-by-side */
     text-align: center;
   }
  

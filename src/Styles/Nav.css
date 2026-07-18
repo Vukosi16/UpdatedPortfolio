@@ -53,7 +53,7 @@ body{
     border-radius: 24px;
 }
 
-/* Tablet and mobile landscape*/
+/* Tablet */
 @media (max-width: 1025px){
     .NavBarContainer{
         width: calc(100% - 40px);
@@ -88,5 +88,24 @@ body{
   .navItem {
     font-size: 0.85rem;  /* smaller text so 5 items fit across a narrower landscape width */
   }
+}
+
+@media (max-width: 600px){
+    .NavBarContainer{
+        width: calc(100% - 20px);
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 20px; 
+        height: 150px;
+        margin-bottom: 100px;
+    }
+
+    .navGrid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 

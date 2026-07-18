@@ -206,6 +206,9 @@ body{
     .gitContainer{
         margin-top: 10vh;
         padding: 0 1rem;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 13vh;
     }
 
     .gtiHeading{
