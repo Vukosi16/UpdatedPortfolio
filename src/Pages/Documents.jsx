@@ -1,45 +1,55 @@
 import { useState } from 'react'
 import '../Styles/Documents.css'
+import cvIcon from '../assets/cvIcon.svg'
+import transcriptIcon from '../assets/transcriptIcon.svg'
+import diplomaIcon from '../assets/diploma.svg'
+import certificateIcon from '../assets/certificate.svg'
+import githubIcon from '../assets/githubIcon.svg'
+import cvFile from '../files/Vukosi Mohlabini Resume CV Programming (1).pdf'
+import transcriptFile from '../files/RP_RGIT_01AcademicTranscriptIEnabler.pdf'
+import diplomaFile from '../files/System Support Certificate.pdf'
+import diplomaFile2 from '../files/Highest Qualification.pdf'
+import certificateFile from '../files/Vukosi_Blessing_Mohlabini_Shaper_Certificate_Nov_2025.pdf'
 
 const documents = [
   {
     id: 'cv',
-    icon: '../src/assets/cvIcon.svg',
+    icon: cvIcon,
     title: 'CV / Resumme',
     desc: 'A summary of my work experience, skills, and education.',
-    file: '../src/files/Vukosi Mohlabini Resume CV Programming (1).pdf',
+    file: cvFile,
   },
   {
     id: 'transcript',
-    icon: '../src/assets/transcriptIcon.svg',
+    icon: transcriptIcon ,
     title: 'Academic Transcript',
     desc: 'Official record of my completed modules and grades.',
-    file: '../src/files/RP_RGIT_01AcademicTranscriptIEnabler.pdf',
+    file: transcriptFile,
   },
   {
     id: 'nqf5',
-    icon: '../src/assets/diploma.svg',
+    icon: diplomaIcon,
     title: 'NQF 5 Certificate in System Support',
     desc: 'National Qualifications Framework Level 5 certificate in System Support.',
-    file: '../src/files/System Support Certificate.pdf',
+    file: diplomaFile,
   },
   {
     id: 'nqf5-2',
-    icon: '../src/assets/diploma.svg',
+    icon: diplomaIcon,
     title: 'NQF 5 Certificate in Systems Development',
     desc: 'Additional NQF 5 qualification documentation.',
-    file: '../src/files/Highest Qualification.pdf',
+    file: diplomaFile2,
   },
   {
     id: 'certificate',
-    icon: '../src/assets/certificate.svg',
+    icon: certificateIcon,
     title: 'Business Analysis Certificate',
     desc: 'A 12 month Bussiness Analysis course completed at Shaper.',
-    file: '../src/files/Vukosi_Blessing_Mohlabini_Shaper_Certificate_Nov_2025.pdf',
+    file: certificateFile,
   },
   {
     id: 'github',
-    icon: '../src/assets/githubIcon.svg',
+    icon: githubIcon,
     title: 'GitHub Profile',
     desc: 'A snapshot of my public repositories and contributions.',
     file: '/',

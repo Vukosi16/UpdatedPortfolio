@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
 import '../Styles/getInTouch.css'
+import linkedinIcon from '../assets/Linkedin.svg'
+import githubIcon from '../assets/githubIcon.svg'
+import gmailIcon from '../assets/gmail.svg'
+import phoneIcon from '../assets/phone.svg'
 
 export const GetInTouch = () => {
     const [showToast, setShowToast] = useState(false);
@@ -46,21 +50,21 @@ export const GetInTouch = () => {
                 <div className="contactGrid">
                     <div className="gridItem">
                         <a href="https://www.linkedin.com/in/vukosi-mohlabini-158646174/" target="_blank">
-                            <img src="../src/assets/Linkedin.svg" alt="" className="icons" />
+                            <img src={linkedinIcon} alt="" className="icons" />
                         </a>
                     </div>
                     <div className="gridItem">
                         <a href="https://github.com/Vukosi16" target="_blank" rel="noopener noreferrer">
-                            <img src="../src/assets/githubIcon.svg" alt="" className="icons" />
+                            <img src={githubIcon} alt="" className="icons" />
                         </a>
                     </div>
                     <div className="gridItem">
                         <a href="mailto:vukosimohlabini16@gmail.com" target="_blank" rel="noopener noreferrer">
-                            <img src="../src/assets/gmail.svg" alt="" className="icons" />
+                            <img src={gmailIcon} alt="" className="icons" />
                         </a>
                     </div>
                     <div className="gridItem" onClick={copyText}>
-                        <img src="../src/assets/phone.svg" alt="" className="icons" />
+                        <img src={phoneIcon} alt="" className="icons" />
                     </div>
 
                 </div>

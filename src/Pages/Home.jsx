@@ -3,6 +3,12 @@ import Nav from '../Components/Nav.jsx'
 import {Link} from 'react-router'
 import '../Styles/App.css'
 import portrait from '../assets/portrait.jpeg'
+import speeconLogo from '../assets/specconLogo.jpeg'
+import shaperLogo from '../assets/shaperLogo.png'
+import setaLogo from '../assets/seta.png'
+import richfieldLogo from '../assets/richfieldLogo.png'
+import codexLogo from '../assets/codexLogo.jpeg'
+
 
 const Home = () => {
   return (
@@ -40,18 +46,18 @@ const Home = () => {
                 <div className="footerWorkedWith">
                     <div className="gridWorkedOn">
                         <div className="navItem wo">SpecCon
-                            <img src="..\src\assets\specconLogo.jpeg" alt="" className="workedOnLogo" />
+                            <img src={speeconLogo} alt="" className="workedOnLogo" />
                         </div>
                         <div className="navItem wo">Shaper
-                            <img src="..\src\assets\shaperLogo.png" alt="" className="workedOnLogo" />
+                            <img src={shaperLogo} alt="" className="workedOnLogo" />
                         </div>
                         <div className="navItem wo">SETA
-                            <img src="..\src\assets\seta.png" alt="" className="workedOnLogo" />
+                            <img src={setaLogo} alt="" className="workedOnLogo" />
                         </div>
                         <div className="navItem wo">Richfield
-                            <img src="..\src\assets\richfieldLogo.png" alt="" className="workedOnLogo" /></div>  
+                            <img src={richfieldLogo} alt="" className="workedOnLogo" /></div>  
                         <div className="navItem wo">CodeX
-                            <img src="..\src\assets\codexLogo.jpeg" alt="" className="workedOnLogo" /></div>  
+                            <img src={codexLogo} alt="" className="workedOnLogo" /></div>  
                     </div>
                 </div>
 
