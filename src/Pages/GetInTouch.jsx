@@ -39,7 +39,7 @@ export const GetInTouch = () => {
                 
                 <div className="gitParaContainer">
                     <p className="gitParagraph">
-                        Hey! Thanks for viewing my portfolio. This is to show my ability to build software and products at my level. Whether you are looking to work wth NuMedia or you are a recuiter, please feel free to contact me on these platforms below. Or leave your details in the form🙏.
+                        Hey! Thanks for viewing my portfolio. This is to show my ability to build software and products at my level. Whether you are looking to work wth NuMedia or you are a recuiter, please feel free to contact me on these platforms below. Or leave your details in the form.
                     </p>
                 </div>
 

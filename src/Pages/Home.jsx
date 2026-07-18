@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from '../Components/Nav.jsx'
 import {Link} from 'react-router'
+import '../Styles/App.css'
 
 const Home = () => {
   return (

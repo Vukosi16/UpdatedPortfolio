@@ -78,7 +78,7 @@ h1 {
 
 /* === Front face content === */
 .gridIcon {
-  width: 70%;
+  width: 50%;
   margin-bottom: 12px;
 }
 
@@ -102,4 +102,58 @@ h1 {
   border-radius: 6px;
   font-size: 13px;
   font-weight: bold;
+}
+
+/* Media queries */
+/* Tablet */
+@media (max-width: 1025px) {
+  .documentContainer {
+    height: auto;
+    min-height: 100vh;
+    padding: 2rem 0;
+  }
+
+  .documentsGrid {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    grid-template-rows: auto;
+    width: min(100%, 900px);
+    height: auto;
+    gap: 16px;
+    justify-content: center;
+    margin-left: 50px;
+  }
+
+  .gridItem {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .documentContainer {
+    padding: 1.5rem 0;
+  }
+
+  h1 {
+    margin-top: 12vh;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .documentsGrid {
+    grid-template-columns: 1fr;
+    width: min(100%, 320px);
+    margin-top: 3vh;
+  }
+
+  .gridItem {
+    aspect-ratio: 1 / 1;
+  }
+
+  .cardTitle {
+    font-size: 12px;
+  }
+
+  .cardDesc {
+    font-size: 14px;
+  }
 }

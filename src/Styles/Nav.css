@@ -52,3 +52,41 @@ body{
     color: #e62aff;
     border-radius: 24px;
 }
+
+/* Tablet and mobile landscape*/
+@media (max-width: 1025px){
+    .NavBarContainer{
+        width: calc(100% - 40px);
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 20px auto 0; 
+    }
+
+    .navGrid{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+}
+
+/* Phone landscape */
+@media (max-width: 1024px) and (max-height: 500px) {
+  .NavBarContainer {
+    height: auto;       /* was 10vh — on a short screen this becomes tiny and can't fit content */
+    padding: 8px 0;
+    top: 8px;
+  }
+
+  .navGrid {
+    grid-template-columns: repeat(5, 1fr); /* back to 5, single row — avoids wrapping to 2 rows */
+    gap: 4px;
+  }
+
+  .navItem {
+    font-size: 0.85rem;  /* smaller text so 5 items fit across a narrower landscape width */
+  }
+}
+

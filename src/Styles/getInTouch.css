@@ -148,3 +148,105 @@ body{
     border: 3px solid #e62aff;
 }
 
+/* Media queries */
+@media (max-width: 1025px) {
+    .gitContainer{
+        flex-direction: column;
+        height: auto;
+        margin-top: 12vh;
+    }
+
+    .gitLeftContainer{
+        width: 100%;
+        margin-left: 0;
+        align-items: center;
+        padding: 0 1.5rem;
+        box-sizing: border-box;
+    }
+
+    .gtiHeading{
+        font-size: 3.5rem;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .gitParaContainer{
+        margin-left: 0;
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .contactGrid{
+        grid-template-columns: repeat(4, 120px);
+        grid-template-rows: 120px;
+        gap: 12px;
+        justify-content: center;
+    }
+
+    .gitRightFormContainer{
+        width: 100%;
+        padding: 2rem 1.5rem 3rem;
+        box-sizing: border-box;
+    }
+
+    #nameTextBox,
+    #emailTextBox,
+    #companyOfIntrest,
+    #message{
+        width: min(100%, 650px);
+    }
+
+    .submitButton{
+        margin-left: 0;
+        align-self: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .gitContainer{
+        margin-top: 10vh;
+        padding: 0 1rem;
+    }
+
+    .gtiHeading{
+        font-size: 2.5rem;
+    }
+
+    .gitParagraph{
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    .contactGrid{
+        grid-template-columns: repeat(2, 110px);
+        grid-template-rows: repeat(2, 110px);
+        gap: 10px;
+        margin-top: 4vh;
+    }
+
+    .gridItem{
+        width: 100%;
+        height: 100%;
+    }
+
+    .icons{
+        width: 70px;
+    }
+
+    .formEdits{
+        width: 100%;
+    }
+
+    #nameTextBox,
+    #emailTextBox,
+    #companyOfIntrest,
+    #message{
+        width: 100%;
+    }
+
+    .submitButton{
+        width: 100%;
+        max-width: 240px;
+    }
+}
+

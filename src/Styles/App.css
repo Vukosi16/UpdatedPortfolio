@@ -97,12 +97,13 @@ body{
 .leftHeroText{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
   width: 50%;
   height: 100%;
   color: white;
   margin-left: 7vw;
+  text-align: left;
+  
 }
 
 .heroHeading{
@@ -110,11 +111,11 @@ body{
   color: #fff;
   margin-bottom: 10px;
   font-family: 'Courier New', Courier, monospace;
-  margin-left: 70px;
+  margin-left: 0;
 }
 
 .heroText{
-  margin-left: 10vw;
+  margin-left: 0;
   font-size: 1em;
   font-family: 'Manrope', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
   font-weight: bold;
@@ -141,6 +142,7 @@ body{
 .rightHeroImage{
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 50%;
   height: 100%;
 
@@ -151,20 +153,20 @@ body{
   height: 300px;
   border-radius: 50%;
   object-fit: cover; 
-  margin-left: 125px;
 }
 
 .headingContainer{
   display: flex;
   flex-direction: row;
   position: relative;
-  left:25px;
-  right: 0;
+  text-align: left;
+  width: 100%;
 }
 
 .workedOnHeading{
   color: white;
-  padding-right: 1150px;
+  padding-left: 100px;
+  font-size: 1.5rem;
   font-family: 'Manrope', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
 
 }
@@ -195,9 +197,6 @@ body{
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
   width: 100%;
-  margin-left: 40px;
-  margin-right: 40px;
-  width: 100%;
   height: 100%;
 }
 
@@ -222,3 +221,168 @@ body{
   border-radius: 25px;
   margin-left: 20px;
 }
+
+
+/* Media queries */
+/* Tablet */
+@media (max-width: 1025px){
+  .ctaButton{
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .heroContainer{
+    margin-top: 0;
+  }
+
+  .footerWorkedWith{
+    position: static;
+    left: auto;              
+    bottom: auto;            
+    transform: none; 
+    display: flex;
+    width: 95%;             
+    margin-left: 0;  
+    justify-content: center;
+    align-items: center;                               
+  }
+
+  .leftHeroText{
+    padding-left: 2px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+  }
+
+  .heroHeading{
+    margin-left: 0;
+    font-size: 2.5rem;
+    margin-top: 200px;
+  }
+
+  .heroText{
+    margin-left: 0;
+    font-size: 1.2rem;
+  }
+
+  .rightHeroImage{
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .portraitImg{
+    margin-left: 0;
+    margin-top: 150px;
+
+  }
+
+  .headingContainer{
+    margin-top: 50px;
+  }
+
+  .workedOnHeading{
+    padding-left: 50px;  
+  }
+
+  .ctaButtonLink{
+    width: 100%;
+  }
+
+  .heroContainer{
+    margin-top: 20px;
+  }
+}
+
+/* Mobile portrait*/
+@media (max-width: 600px){
+  .mainPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heroContainer{
+    flex-direction: column;   /* stack text above photo instead of side-by-side */
+    height: auto;
+    margin-top: 0;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+ 
+  .leftHeroText{
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+  }
+ 
+  .heroHeading{
+    font-size: 1.8rem;        /* was 2.5rem at tablet — too big for a phone screen */
+    margin-top: 60px;        /* clears the nav; one number since layout is stacked, not side-by-side */
+    text-align: center;
+  }
+ 
+  .heroText{
+    font-size: 1rem;          /* was 1.2rem at tablet */
+    text-align: center;
+  }
+ 
+  .ctaButton{
+    max-width: 100%;          /* was 500px at tablet — fill the narrow column instead */
+    height: 60px;
+  }
+ 
+  .rightHeroImage{
+    margin-top: 20px;
+  }
+ 
+  .portraitImg{
+    width: 180px;             /* was 300px base — too large for a phone */
+    height: 180px;
+    margin-top: 0;            /* was 150px at tablet — no longer needed, stacked layout handles spacing */
+  }
+ 
+  .headingContainer{
+    display: none;
+  }
+
+ 
+  .footerWorkedWith{
+    display: none;
+  }
+ 
+}
+
+/* Mobile landscape */
+@media (max-width: 1024px) and (max-height: 500px) {
+  .heroContainer {
+    margin-top: 250px;
+    height: 30vh;
+    margin-bottom: 100px;
+  }
+
+  .heroHeading {
+    margin-top: 0;
+    font-size: 1.6rem;
+  }
+
+  .portraitImg {
+    width: 120px;
+    height: 120px;
+    margin-top: 0;
+  }
+
+  .footerWorkedWith {
+    position: static;
+    transform: none;
+    left: auto;
+    bottom: auto;
+    margin: 20px auto;
+  }
+}
+
