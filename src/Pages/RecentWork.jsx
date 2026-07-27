@@ -26,7 +26,6 @@ const RecentWork = () => {
         </div>
 
         <div className="projectCard">
-          <div className="projectsBadge">Recent work</div>
           <h1>NuMedia consulting company</h1>
           <p>
             I’m launching NuMedia, my website-building consulting company, to help clients create
