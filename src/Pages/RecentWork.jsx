@@ -5,7 +5,7 @@ const RecentWork = () => {
     <div className="projectsPage">
       <div className="projectsRow">
         <div className="projectCard">
-          <h1>Timesheet app for my soccer club</h1>
+          <h1>Timesheet app for coaches at my soccer club</h1>
           <p>
             I’m currently building a timesheet app for my soccer club to track payments and keep
             everything organized in one place.
